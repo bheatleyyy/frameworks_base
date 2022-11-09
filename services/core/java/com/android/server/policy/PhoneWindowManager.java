@@ -5873,7 +5873,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             case HapticFeedbackConstants.LONG_PRESS:
             case HapticFeedbackConstants.LONG_PRESS_POWER_BUTTON:
             case HapticFeedbackConstants.EDGE_SQUEEZE:
-                return VibrationEffect.get(VibrationEffect.EFFECT_HEAVY_CLICK);
+                return VibrationEffect.get(VibrationEffect.EFFECT_THUD);
             case HapticFeedbackConstants.REJECT:
                 return VibrationEffect.get(VibrationEffect.EFFECT_DOUBLE_CLICK);
 
@@ -5893,7 +5893,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                             .compose();
                 }
                 // fallback for devices without composition support
-                return VibrationEffect.get(VibrationEffect.EFFECT_HEAVY_CLICK);
+                return VibrationEffect.get(VibrationEffect.EFFECT_THUD);
 
             default:
                 return null;
